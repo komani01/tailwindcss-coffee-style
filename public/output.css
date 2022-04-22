@@ -514,6 +514,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .ml-16{
   margin-left: 4rem;
 }
@@ -546,6 +551,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 4rem;
 }
 
+.ml-5{
+  margin-left: 1.25rem;
+}
+
 .flex{
   display: flex;
 }
@@ -576,6 +585,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[380px\]{
   height: 380px;
+}
+
+.h-\[280px\]{
+  height: 280px;
+}
+
+.h-\[130px\]{
+  height: 130px;
 }
 
 .w-full{
@@ -620,6 +637,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-basis: 16.666667%;
 }
 
+.basis-1\/2{
+  flex-basis: 50%;
+}
+
+.basis-2{
+  flex-basis: 0.5rem;
+}
+
+.basis-2\/3{
+  flex-basis: 66.666667%;
+}
+
+.basis-1\/3{
+  flex-basis: 33.333333%;
+}
+
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -635,6 +668,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-row{
   flex-direction: row;
+}
+
+.flex-col{
+  flex-direction: column;
 }
 
 .items-center{
@@ -657,6 +694,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 2rem;
 }
 
+.gap-5{
+  gap: 1.25rem;
+}
+
 .rounded-full{
   border-radius: 9999px;
 }
@@ -674,6 +715,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-40{
@@ -722,6 +768,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[url\(\'\.\/image\/image9\.jpg\'\)\]{
   background-image: url('./image/image9.jpg');
+}
+
+.bg-\[url\(\'\.\/image\/image\.jpg\'\)\]{
+  background-image: url('./image/image.jpg');
+}
+
+.bg-\[url\(\'\.\/image\/image5\.jpg\'\)\]{
+  background-image: url('./image/image5.jpg');
+}
+
+.bg-\[url\(\'\.\/image\/image15\.jpg\'\)\]{
+  background-image: url('./image/image15.jpg');
+}
+
+.bg-\[url\(\'\.\/image\/image12\.jpg\'\)\]{
+  background-image: url('./image/image12.jpg');
 }
 
 .bg-cover{
@@ -784,6 +846,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
+.pl-14{
+  padding-left: 3.5rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -827,6 +893,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-semibold{
   font-weight: 600;
 }
@@ -849,6 +920,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .tracking-wider{
   letter-spacing: 0.05em;
+}
+
+.tracking-widest{
+  letter-spacing: 0.1em;
 }
 
 .text-gray-500{
@@ -1079,6 +1154,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(162 95 75 / var(--tw-text-opacity));
 }
 
+.hover\:opacity-40:hover{
+  opacity: 0.4;
+}
+
+.hover\:opacity-90:hover{
+  opacity: 0.9;
+}
+
+.hover\:opacity-10:hover{
+  opacity: 0.1;
+}
+
 .hover\:transition-all:hover{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1211,6 +1298,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1280px){
+  .xl\:w-\[65\%\]{
+    width: 65%;
+  }
+
   .xl\:px-96{
     padding-left: 24rem;
     padding-right: 24rem;

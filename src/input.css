@@ -13,3 +13,15 @@
 .cus-top-menu-expanded{
     @apply absolute top-10 z-50 w-full bg-white text-center animate-slideDown;
 }
+.sub-headline{
+  @apply flex justify-center items-center mb-24 ;
+}
+.cus-sub-title{
+@apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-xs text-center ;
+}
+.cus-sub-line{
+  @apply w-8 h-px bg-gray-200;
+}
+.cus-button{
+ @apply text-center uppercase text-[13px] tracking-wider py-4 px-8 hover:bg-opacity-90 font-semibold cursor-pointer;
+}

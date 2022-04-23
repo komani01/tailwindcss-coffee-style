@@ -494,6 +494,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0.75rem;
 }
 
+.left-\[calc\(-50pw\+50\%\)\]{
+  left: calc(-50pw + 50%);
+}
+
+.left-\[calc\(-50vw\+50\%\)\]{
+  left: calc(-50vw + 50%);
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -512,11 +520,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .ml-16{
@@ -551,8 +554,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 4rem;
 }
 
-.ml-5{
-  margin-left: 1.25rem;
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 
 .flex{
@@ -579,10 +582,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 440px;
 }
 
-.h-\[540px\]{
-  height: 540px;
-}
-
 .h-\[380px\]{
   height: 380px;
 }
@@ -593,6 +592,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[130px\]{
   height: 130px;
+}
+
+.h-\[\]{
+  height: ;
+}
+
+.h-\[340px\]{
+  height: 340px;
+}
+
+.h-\[500px\]{
+  height: 500px;
 }
 
 .w-full{
@@ -617,6 +628,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100px;
 }
 
+.w-\[100vw\]{
+  width: 100vw;
+}
+
 .max-w-screen-2xl{
   max-width: 1536px;
 }
@@ -639,10 +654,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .basis-1\/2{
   flex-basis: 50%;
-}
-
-.basis-2{
-  flex-basis: 0.5rem;
 }
 
 .basis-2\/3{
@@ -770,10 +781,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('./image/image9.jpg');
 }
 
-.bg-\[url\(\'\.\/image\/image\.jpg\'\)\]{
-  background-image: url('./image/image.jpg');
-}
-
 .bg-\[url\(\'\.\/image\/image5\.jpg\'\)\]{
   background-image: url('./image/image5.jpg');
 }
@@ -786,8 +793,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('./image/image12.jpg');
 }
 
+.bg-\[url\(\'\.\/image\/image16\.jpg\'\)\]{
+  background-image: url('./image/image16.jpg');
+}
+
 .bg-cover{
   background-size: cover;
+}
+
+.bg-fixed{
+  background-attachment: fixed;
 }
 
 .bg-bottom{
@@ -848,6 +863,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-14{
   padding-left: 3.5rem;
+}
+
+.pl-8{
+  padding-left: 2rem;
 }
 
 .text-center{
@@ -1154,16 +1173,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(162 95 75 / var(--tw-text-opacity));
 }
 
-.hover\:opacity-40:hover{
-  opacity: 0.4;
-}
-
 .hover\:opacity-90:hover{
   opacity: 0.9;
-}
-
-.hover\:opacity-10:hover{
-  opacity: 0.1;
 }
 
 .hover\:transition-all:hover{
@@ -1228,12 +1239,29 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px){
-  .md\:grid-cols-1{
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+  .md\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .md\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .md\:flex{
+    display: flex;
   }
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:flex-col{
+    flex-direction: column;
   }
 
   .md\:gap-4{
@@ -1243,6 +1271,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:px-32{
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 }
 
@@ -1305,5 +1337,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:px-96{
     padding-left: 24rem;
     padding-right: 24rem;
+  }
+
+  .xl\:pl-14{
+    padding-left: 3.5rem;
   }
 }
